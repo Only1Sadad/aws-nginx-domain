@@ -5,7 +5,7 @@ serving a page over my own domain with HTTPS.
 
 ## Architecture
 
-Browser → Route 53 (DNS) → Elastic IP → EC2 (Ubuntu + NGINX) → index.html
+Browser → Cloudflare (DNS) → Elastic IP → EC2 (Ubuntu + NGINX) → index.html
 
 ## What I used
 
