@@ -43,13 +43,6 @@ Browser → Cloudflare (DNS) → Elastic IP → EC2 (Ubuntu + NGINX) → index.h
 
 	```
 
-
-## Troubleshooting
-
-- Site times out → check security group ports 80/443
-- Wrong page shows → check `server_name` and remove the default site
-- Certbot fails → DNS must already point at the server
-
 ## What I learned
 
 - How to launch and configure an EC2 instance on AWS
@@ -57,3 +50,9 @@ Browser → Cloudflare (DNS) → Elastic IP → EC2 (Ubuntu + NGINX) → index.h
 - Why an Elastic IP matters: a normal public IP changes whenever an instance is stopped and started, so a fixed address keeps DNS working
 - How to buy a domain through Cloudflare and create A records pointing it at my instance's IP
 - How to set up TLS with Certbot so the site is served over HTTPS
+
+## Troubleshooting
+
+- Site times out → check security group ports 80/443
+- Wrong page shows → check `server_name` and remove the default site
+- Certbot fails → DNS must already point at the server
